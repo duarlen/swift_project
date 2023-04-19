@@ -1,0 +1,13 @@
+# Mac 系统相关
+.DS_Store
+
+# 用户相关
+xcuserdata
+
+# Cocoapods 相关
+Pods/
+
+# 打包的
+build/
+
+
