@@ -1,9 +1,3 @@
-//
-//  EnvironmentSelector.swift
-//  Environment
-//
-//  Created by 花生 on 2023/2/24.
-//
 
 import SnapKit
 import UIKit
