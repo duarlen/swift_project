@@ -136,6 +136,13 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
+		8789107F29F11C8B000CF79C /* AnimationPlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AnimationPlayer;
+			sourceTree = "<group>";
+		};
 		87B3354129EFC65C00516850 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +178,7 @@
 		87B3356129EFC6B800516850 /* Du */ = {
 			isa = PBXGroup;
 			children = (
+				8789107F29F11C8B000CF79C /* AnimationPlayer */,
 				8789104829F113E4000CF79C /* Network */,
 				87B3356229EFC6B800516850 /* CustomUI */,
 				87B3356429EFC6B800516850 /* Core */,
