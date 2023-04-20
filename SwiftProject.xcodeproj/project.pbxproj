@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		30A9AC87D0EFCBA8914CE43A /* Pods_SwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F161CEE23E1C70CCDAF13072 /* Pods_SwiftProject.framework */; };
+		8789105629F1143D000CF79C /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789104929F1143D000CF79C /* ApiClient.swift */; };
+		8789105729F1143D000CF79C /* RequestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789104B29F1143D000CF79C /* RequestTarget.swift */; };
+		8789105829F1143D000CF79C /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789104C29F1143D000CF79C /* RequestMethod.swift */; };
+		8789105929F1143E000CF79C /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789104D29F1143D000CF79C /* RequestModel.swift */; };
+		8789105A29F1143E000CF79C /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789104F29F1143D000CF79C /* ResponseModel.swift */; };
+		8789105B29F1143E000CF79C /* Response+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789105029F1143D000CF79C /* Response+Map.swift */; };
+		8789105C29F1143E000CF79C /* LoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789105229F1143D000CF79C /* LoggerPlugin.swift */; };
+		8789105D29F1143E000CF79C /* TimeoutPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789105329F1143D000CF79C /* TimeoutPlugin.swift */; };
+		8789105E29F1143E000CF79C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789105529F1143D000CF79C /* NetworkError.swift */; };
 		87B3354E29EFC65C00516850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B3354D29EFC65C00516850 /* AppDelegate.swift */; };
 		87B3355229EFC65C00516850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B3355129EFC65C00516850 /* ViewController.swift */; };
 		87B3355529EFC65C00516850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B3355329EFC65C00516850 /* Main.storyboard */; };
@@ -33,6 +42,15 @@
 /* Begin PBXFileReference section */
 		03910E1CA27A2062D1006431 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		72C4E57F259FDCAB91F340C6 /* Pods-SwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.release.xcconfig"; sourceTree = "<group>"; };
+		8789104929F1143D000CF79C /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		8789104B29F1143D000CF79C /* RequestTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTarget.swift; sourceTree = "<group>"; };
+		8789104C29F1143D000CF79C /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		8789104D29F1143D000CF79C /* RequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		8789104F29F1143D000CF79C /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		8789105029F1143D000CF79C /* Response+Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Map.swift"; sourceTree = "<group>"; };
+		8789105229F1143D000CF79C /* LoggerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerPlugin.swift; sourceTree = "<group>"; };
+		8789105329F1143D000CF79C /* TimeoutPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutPlugin.swift; sourceTree = "<group>"; };
+		8789105529F1143D000CF79C /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		87B3354A29EFC65C00516850 /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B3354D29EFC65C00516850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87B3355129EFC65C00516850 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +88,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8789104829F113E4000CF79C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8789104929F1143D000CF79C /* ApiClient.swift */,
+				8789105429F1143D000CF79C /* Error */,
+				8789105129F1143D000CF79C /* Plugins */,
+				8789104A29F1143D000CF79C /* Request */,
+				8789104E29F1143D000CF79C /* Response */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8789104A29F1143D000CF79C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				8789104B29F1143D000CF79C /* RequestTarget.swift */,
+				8789104C29F1143D000CF79C /* RequestMethod.swift */,
+				8789104D29F1143D000CF79C /* RequestModel.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		8789104E29F1143D000CF79C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				8789104F29F1143D000CF79C /* ResponseModel.swift */,
+				8789105029F1143D000CF79C /* Response+Map.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		8789105129F1143D000CF79C /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				8789105229F1143D000CF79C /* LoggerPlugin.swift */,
+				8789105329F1143D000CF79C /* TimeoutPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		8789105429F1143D000CF79C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				8789105529F1143D000CF79C /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		87B3354129EFC65C00516850 = {
 			isa = PBXGroup;
 			children = (
@@ -91,27 +157,28 @@
 		87B3354C29EFC65C00516850 /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
-				87B3356129EFC6B800516850 /* New Group */,
+				87B3356129EFC6B800516850 /* Du */,
 				87B3354D29EFC65C00516850 /* AppDelegate.swift */,
 				87B3355129EFC65C00516850 /* ViewController.swift */,
-				87B3355329EFC65C00516850 /* Main.storyboard */,
 				87B3355629EFC65E00516850 /* Assets.xcassets */,
-				87B3355829EFC65E00516850 /* LaunchScreen.storyboard */,
 				87B3355B29EFC65E00516850 /* Info.plist */,
+				87B3355829EFC65E00516850 /* LaunchScreen.storyboard */,
+				87B3355329EFC65C00516850 /* Main.storyboard */,
 			);
 			path = SwiftProject;
 			sourceTree = "<group>";
 		};
-		87B3356129EFC6B800516850 /* New Group */ = {
+		87B3356129EFC6B800516850 /* Du */ = {
 			isa = PBXGroup;
 			children = (
+				8789104829F113E4000CF79C /* Network */,
 				87B3356229EFC6B800516850 /* CustomUI */,
 				87B3356429EFC6B800516850 /* Core */,
 				87B3356629EFC6B800516850 /* Utils */,
 				87B3356929EFC6B800516850 /* Extensions */,
 				87B3357129EFC6B800516850 /* Environment */,
 			);
-			path = "New Group";
+			path = Du;
 			sourceTree = "<group>";
 		};
 		87B3356229EFC6B800516850 /* CustomUI */ = {
@@ -296,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8789105D29F1143E000CF79C /* TimeoutPlugin.swift in Sources */,
 				87B3357729EFC6B800516850 /* DuWrapper.swift in Sources */,
 				87B3357A29EFC6B800516850 /* UIViewController+Du.swift in Sources */,
 				87B3357829EFC6B800516850 /* DeviceUtils.swift in Sources */,
@@ -303,14 +371,22 @@
 				87B3358429EFC6B800516850 /* EnvironmentSelector.swift in Sources */,
 				87B3357C29EFC6B800516850 /* UIWindow+Du.swift in Sources */,
 				87B3355229EFC65C00516850 /* ViewController.swift in Sources */,
+				8789105B29F1143E000CF79C /* Response+Map.swift in Sources */,
 				87B3358129EFC6B800516850 /* Environments.swift in Sources */,
+				8789105A29F1143E000CF79C /* ResponseModel.swift in Sources */,
+				8789105829F1143D000CF79C /* RequestMethod.swift in Sources */,
 				87B3357B29EFC6B800516850 /* Color+Du.swift in Sources */,
 				87B3357F29EFC6B800516850 /* Date+Du.swift in Sources */,
+				8789105929F1143E000CF79C /* RequestModel.swift in Sources */,
 				87B3357929EFC6B800516850 /* LocalDataUtils.swift in Sources */,
+				8789105629F1143D000CF79C /* ApiClient.swift in Sources */,
 				87B3358029EFC6B800516850 /* Character+Du.swift in Sources */,
 				87B3357D29EFC6B800516850 /* String+Du.swift in Sources */,
 				87B3354E29EFC65C00516850 /* AppDelegate.swift in Sources */,
 				87B3357629EFC6B800516850 /* UIInsetLabel.swift in Sources */,
+				8789105C29F1143E000CF79C /* LoggerPlugin.swift in Sources */,
+				8789105729F1143D000CF79C /* RequestTarget.swift in Sources */,
+				8789105E29F1143E000CF79C /* NetworkError.swift in Sources */,
 				87B3357E29EFC6B800516850 /* UIImage+Du.swift in Sources */,
 				87B3358229EFC6B800516850 /* EnvironmentFloatView.swift in Sources */,
 			);

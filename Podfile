@@ -9,5 +9,14 @@ target 'SwiftProject' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SnapKit'
+  pod 'RealmSwift'
 
+  
+  # 网络框架和数据解析
+  pod 'Moya/RxSwift'
+  pod 'HandyJSON'
+  
+  # 动画
+  
+  
 end
